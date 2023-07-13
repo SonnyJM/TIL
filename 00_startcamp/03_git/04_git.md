@@ -179,3 +179,7 @@ $ git push origin master
 ```bash
 $ git clone repository_url
 ```
+- commit 업데이트 할 때
+```bash
+$ git pull origin master
+```
