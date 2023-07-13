@@ -32,11 +32,21 @@
     - Working Directory에서 변경된 파일 중, 다음 버전에 포함시킬 파일들을 선택적으로 추가하거나 제외할 수 있는 중간 준비 영역
 
 
-3. **Repository**
+## 3. **Repository**
     - 버전(commit) 이력과 파일들이 영구적으로 저장되는 영역
     - 모든 버전과 변경 이력이 기록됨
     - **commit**
         - 변경된 파일들을 저장하는 행위
+    - Repository의 분류
+        - local : 현재 작업 영역
+        - remote : "원격 저장소" / github & gitlab
+            - github/gitlab은 서비스일 뿐 not git!
+
+
+
+
+
+
 ### git 초기화
 ```
 $ git init
@@ -86,9 +96,12 @@ commit 84b333f46d4eecaf78c8222109aa44bb0633157b (HEAD -> master) # commit 고유
 Author: 손종민 <kain9101@naver.com>
 Date:   Thu Jul 13 11:09:25 2023 +0900
 
-    230712 markdown & CLI 기초 문법과 ChatGPT Bot Programming```
+    230712 markdown & CLI 기초 문법과 ChatGPT Bot Programming
 
-``````
+한 줄로 보기
+$ git log --oneline
+```
+
 ### 직전 git commit명 수정하기
 ```
 $ git commit --amend
@@ -98,4 +111,42 @@ $ git commit --amend
 # 2. 커밋 메시지를 수정한다.
 # 3. esc를 눌러서 - 삽입 상태를 종료한다.
 # 4. :wq를 입력해서 저장하고 종료한다.
+```
+
+### git 설정 초기화
+```
+# vim을 활용해서 설정 제거하기
+# vim git 설정 파일 열기
+$ vim ~/.git config 
+# insert 키 : 수정 상태 만들기
+# --insert-- 인 상태에서 모든 내용 삭제
+# esc: 수정 상태 종료
+# :wq
+# insert 상태 아닐 때 u 입력시 작업 취소
+
+$ code ~/.gitconfig
+```
+
+### 연습하기!
+```
+1. 바탕화면에서 vscode 열기
+2. vscode에서 bash 터미널 열기
+3. bash에서 CLI로 폴더 'git_study' 만들기
+4. git_study 폴더 안에 CLI로 파일 'README.md' 만들기
+5. vscode에서 README.md 내용 수정하기
+6. git init add commit
+    6-1. git 기본 설정 (email, name 설정)
+7. commit 최소 3개 이상 만들기
+```
+
+## Remote Repository
+원격저장소 : git을 원격으로 저장할 수 있는 공간
+
+저장하기
+```
+git remote add origin {주소}
+git push -u origin master
+
+(저장 확인)
+git remote -v
 ```
