@@ -87,3 +87,15 @@ Author: 손종민 <kain9101@naver.com>
 Date:   Thu Jul 13 11:09:25 2023 +0900
 
     230712 markdown & CLI 기초 문법과 ChatGPT Bot Programming```
+
+``````
+### 직전 git commit명 수정하기
+```
+$ git commit --amend
+
+# vim에서 내용 수정하기
+# 1. insert를 눌러서 - 삽입 상태로 만든다.
+# 2. 커밋 메시지를 수정한다.
+# 3. esc를 눌러서 - 삽입 상태를 종료한다.
+# 4. :wq를 입력해서 저장하고 종료한다.
+```
