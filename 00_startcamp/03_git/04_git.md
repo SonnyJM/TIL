@@ -76,6 +76,8 @@ $ git config --global user.name "Your Name"
 ### git 기초 설정
 ```bash
 $ git config --global user.email "kain9101@naver.com"
+-> commit의 작성자 정보.
+-> commit 내용에 관련 정보가 남음.
 $ git config --global user.name "손종민"
 
 $ git config --global --list
@@ -150,3 +152,11 @@ git push -u origin master
 (저장 확인)
 git remote -v
 ```
+### 주의할 것
+1. remote repository
+    - .git의 변동사항을 올리는 것!
+    - 버전(commit)을 쌓고 -> push 명령어로 올려준다.
+    - Add a README file 옵션 지정시, 원격 저장소에 .git이 있는 상태로 생성.
+    - 다른 뿌리이기 때문에 local에 생성한 .git이 있는 경우 연동 불가
+    - Add a README file 옵션 지정 == git init 명령어를 원격 저장소에 쓴 것.
+    - 잘못 만들면 settings -> 삭제
