@@ -163,3 +163,19 @@ git remote -v
 
     - github 메일 연동기능 있음.
     - PC 변경시 config 메일/이름 꼭 확인!
+
+### 원격 저장소에 등록
+```bash
+$ git remote add {remote_nickname} {remote_url} 
+```
+
+### 원격 저장소에 업로드
+```bash
+$ git push origin master
+```
+
+### 원격 저장소에 있는 내용 복제
+- 최초로 내려받을 때
+```bash
+$ git clone repository_url
+```
