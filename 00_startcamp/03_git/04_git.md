@@ -35,9 +35,55 @@
 3. **Repository**
     - 버전(commit) 이력과 파일들이 영구적으로 저장되는 영역
     - 모든 버전과 변경 이력이 기록됨
-    - commit
+    - **commit**
         - 변경된 파일들을 저장하는 행위
 ### git 초기화
 ```
 $ git init
 ```
+
+### 상태 확인 명령어
+```
+$ git status
+```
+
+### git에 추가 명령어
+```
+$ git add {path}<folder_name>/{file_name}
+```
+
+### Repository에 저장하기
+```
+$ git commit -m "commit message"
+```
+- commit message는 상세히 남기면 좋음
+- 공백이 의미하는 바 생각하기!
+- 따옴표 감싸기 가능. (문자열 만들기)
+```
+$ git config --global user.email "you@example.com"
+$ git config --global user.name "Your Name"
+```
+### git 기초 설정
+```bash
+$ git config --global user.email "kain9101@naver.com"
+$ git config --global user.name "손종민"
+
+$ git config --global --list
+```
+
+터미널 단축키
+- 복사 : 우클릭
+- 붙여넣기 : shift + insert
+
+### 커밋 기록 확인하기
+```
+$ git log
+```
+
+```
+$ git log
+commit 84b333f46d4eecaf78c8222109aa44bb0633157b (HEAD -> master) # commit 고유값
+Author: 손종민 <kain9101@naver.com>
+Date:   Thu Jul 13 11:09:25 2023 +0900
+
+    230712 markdown & CLI 기초 문법과 ChatGPT Bot Programming```
