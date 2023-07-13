@@ -160,3 +160,6 @@ git remote -v
     - 다른 뿌리이기 때문에 local에 생성한 .git이 있는 경우 연동 불가
     - Add a README file 옵션 지정 == git init 명령어를 원격 저장소에 쓴 것.
     - 잘못 만들면 settings -> 삭제
+
+    - github 메일 연동기능 있음.
+    - PC 변경시 config 메일/이름 꼭 확인!
