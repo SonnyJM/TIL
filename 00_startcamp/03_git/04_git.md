@@ -5,9 +5,9 @@
 
 **버전 관리** : 변화를 기록하고 추적하는 것
 
-```
-#### 버전을 관리하는 방법
 
+#### 버전을 관리하는 방법
+```bash
 분산식 관리
     - 버전을 여러 개의 복제된 저장소에 저장 및 관리
 
@@ -23,7 +23,7 @@
 - 개발되어 온 과정 파악
 - 이전 버전과의 변경 사항 비교
 
-## Git의 영역
+### Git의 영역
 1. **Working Directory**
     - 실제로 작업하고 있는 환경
     - Git이 수정할 작업이 일어나고 있는 곳
@@ -32,7 +32,7 @@
     - Working Directory에서 변경된 파일 중, 다음 버전에 포함시킬 파일들을 선택적으로 추가하거나 제외할 수 있는 중간 준비 영역
 
 
-## 3. **Repository**
+### 3. **Repository**
     - 버전(commit) 이력과 파일들이 영구적으로 저장되는 영역
     - 모든 버전과 변경 이력이 기록됨
     - **commit**
@@ -48,28 +48,28 @@
 
 
 ### git 초기화
-```
+```bash
 $ git init
 ```
 
 ### 상태 확인 명령어
-```
+```bash
 $ git status
 ```
 
 ### git에 추가 명령어
-```
+```bash
 $ git add {path}<folder_name>/{file_name}
 ```
 
 ### Repository에 저장하기
-```
+```bash
 $ git commit -m "commit message"
 ```
 - commit message는 상세히 남기면 좋음
 - 공백이 의미하는 바 생각하기!
 - 따옴표 감싸기 가능. (문자열 만들기)
-```
+```bash
 $ git config --global user.email "you@example.com"
 $ git config --global user.name "Your Name"
 ```
@@ -88,11 +88,11 @@ $ git config --global --list
 - 붙여넣기 : shift + insert
 
 ### 커밋 기록 확인하기
-```
+```bash
 $ git log
 ```
 
-```
+```bash
 $ git log
 commit 84b333f46d4eecaf78c8222109aa44bb0633157b (HEAD -> master) # commit 고유값
 Author: 손종민 <kain9101@naver.com>
