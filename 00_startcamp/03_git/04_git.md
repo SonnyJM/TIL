@@ -189,3 +189,14 @@ $ git pull origin master
 ### repository 연동
 - github (save named "origin")
 - gitlab (save named "lab")
+
+## gitignore
+- git에서 특정 파일이나 디렉토리를 추적하지 않도록 설정하는 데 사용되는 텍스트 파일
+
+    -> 프로젝트에 따라 공유하지 않아야 하는 것도 존재하기 때문
+    ex) db, 가상환경, 개인설정 등
+
+```bash
+.gitignore 파일 생성
+ -> txt 문서로 만들면 안되고, vscode로 열어서 new file로 만들 것.
+```
