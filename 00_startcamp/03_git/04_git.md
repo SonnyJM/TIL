@@ -172,6 +172,8 @@ $ git remote add {remote_nickname} {remote_url}
 ### 원격 저장소에 업로드
 ```bash
 $ git push origin master
+$ git push -u origin master
+#-u = upstream 설정
 ```
 
 ### 원격 저장소에 있는 내용 복제
