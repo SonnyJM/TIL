@@ -1,5 +1,5 @@
 API KEY
-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
+
 
 # API
 Application Programming Interface
