@@ -183,3 +183,7 @@ $ git clone repository_url
 ```bash
 $ git pull origin master
 ```
+
+### repository 연동
+- github (save named "origin")
+- gitlab (save named "lab")
