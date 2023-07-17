@@ -69,7 +69,7 @@
 - Mapping Types
     - dict
 - 기타
-    - None, Boolean(True or False), Functions
+    - None(파이썬에서만 존재), Boolean(True or False), Functions
 
 ### 산술 연산자
 
@@ -97,6 +97,10 @@
 ### 변수와 메모리 "값이 저장되는 법"
 
 변수(variable) : 값을 **참조**하는 이름
+
+변할 수 있어서 '변수', 변할 수 있는 수.
+
+변수의 값은 할당할 때마다 바뀔 수 있음!~~
 
 a = 1
 
@@ -173,3 +177,5 @@ ex> variable = expression
 - 코드의 특정 부분을 설명하거나 임시로 코드를 비활성화할 때 사용
 - 코드를 이해하거나 문서화하기 위해
 - 다른 개발자나 자신에게 코드의 의도나 동작을 설명하는 데 도움.
+
+
