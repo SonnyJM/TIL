@@ -1,3 +1,4 @@
+from copy import deepcopy
 catalog = [
     ['시간의 틈', '반짝임의 어둠', '망각의 경계'], 
     ['연기의 수수께끼', '장면의 고백', '드라마의 그림자'], 
@@ -5,14 +6,19 @@ catalog = [
     ['성공의 열쇠', '내면의 변화', '목표의 달성']
 ]
 
-backup_catalog = None
+#backup_catalog = catalog[0:4] #내가 시도한 방법
+backup_catalog = deepcopy(catalog) # 다른 방법
 
 ''' 
 도서 제목 '성공의 열쇠', '내면의 변화', '목표의 달성' 을 각각
 '성공을 향한 한 걸음', '내 삶의 변화', '목표 달성의 비밀' 가 되도록 변경하시오.
 '''
 
+#catalog[3] = ['성공을 향한 한 걸음', '내 삶의 변화', '목표 달성의 비밀'] - 내가 한 방법
+#deepcopy로 복제한 다음, 하나하나씩 바꿔주는 방법.
+
 print('catalog와 backup_catalog를 비교한 결과')
+print(backup_catalog is catalog)
 # 식별 연산자로 catalog와 backup_catalog를 비교한 결과를 출력하시오. 
 print()
 

@@ -4,4 +4,7 @@ author_2 = '허균'
 book_1 = '주생전'
 book_2 = '홍길동전'
 
+
+# f'{sum(1,2)}' 등 표현식 집어넣기 가능.
+# f'{expression}'
 print(f'{book_1}의 작가는 {author_1}이고 ,\n{author_2}은 {book_2}를 집필하였다.')

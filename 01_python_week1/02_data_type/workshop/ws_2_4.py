@@ -28,3 +28,12 @@ print(list_info[1], ':', information['허균'])
 print(list_info[2], ':', information['남영로'])
 print(list_info[3], ':', information['작자 미상'])
 print(list_info[4], ':', information['임제'])
+
+# 다른 방법(f string 활용)
+print(f'{authors[0]} : {information[authors[0]]}')
+'''
+ages = [30, 20, 10]
+addresss = ['서울', '부산', '광주']
+
+infos = [ages, addresss]
+'''
